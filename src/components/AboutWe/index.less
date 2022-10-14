@@ -1,0 +1,87 @@
+.aboutWeBox {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutContent {
+  position: relative;
+  top: -20px;
+  max-width: 1000px;
+  width: 60%;
+  min-width: 360px;
+}
+.aboutTitle {
+  padding-bottom: 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.aboutMes {
+  font-size: 18px;
+}
+.memberName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex: 1 0 10%;
+  box-shadow: 0 0 8px rgba(180, 160, 120, 0.8);
+  margin: 6%;
+  padding: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  // border-radius: 16px;
+  cursor: pointer;
+}
+.memberName span {
+  font-size: 18px;
+  font-weight: 800;
+  // color: #584b42;
+}
+.memberLeft {
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.member {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+.memberRight {
+  padding-left: 20px;
+  color: rgb(89, 86, 85);
+}
+.memberItem {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 4px 0px;
+}
+.toTop {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(180, 160, 120, 0.8);
+  border-radius: 2px;
+  margin: 6%;
+  padding: 10px;
+  right: 5%;
+  bottom: 10%;
+  background-color: #f2e2d8;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .member {
+    display: block;
+  }
+  .aboutTitle {
+    padding-bottom: 14px;
+  }
+  .toTop {
+    bottom: 5%;
+  }
+}
