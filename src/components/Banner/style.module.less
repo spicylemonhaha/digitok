@@ -1,4 +1,60 @@
 .bannerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  background-color: aliceblue;
+
+  .bannerTitle {
+    position: relative;
+    top: -50px;
+    width: 500px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+.container {
+  text-align: center;
+  i {
+    color: white;
+  }
+}
+
+.container p {
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 15px;
+  font-weight: 300;
+}
+.emailBox {
+  height: 40px;
+  justify-content: center;
+  display: flex; /*its better to use inline-flex*/
+}
+.emailBox i {
+  background: #2f3542;
+  width: 40px;
+  line-height: 40px;
+}
+.tbox,
+.btn {
+  border: none;
+  outline: none;
+}
+.tbox {
+  width: 0px;
+  transition: 0.6s;
+}
+.emailBox:hover > .tbox,
+.tbox:focus {
+  width: 220px;
+  padding: 0 10px;
+}
+.btn {
+  background: #2f3542;
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
 }

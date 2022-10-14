@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .arrows-body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .arrow {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-top: 3px solid #fff;
+        border-left: 3px solid #fff;
+        transform: rotate(-135deg);
+        animation: arrow-load 2s infinite;
+      }
+      .arrow:nth-child(1) {
+        left: 32px;
+        animation-delay: -0.4s;
+      }
+      .arrow:nth-child(2) {
+        top: 20px;
+        animation-delay: -0.2s;
+      }
+      .arrow:nth-child(3) {
+        top: 40px;
+        right: 32px;
+      }
+      @keyframes arrow-load {
+        0% {
+          opacity: 0;
+          transform: rotate(-135deg) translate(30px, 30px);
+        }
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: rotate(-135deg) translate(-30px, -30px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="arrows-body">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </div>
+  </body>
+</html>
